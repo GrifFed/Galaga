@@ -1,0 +1,24 @@
+﻿<Window x:Class="Galaga.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Galaga" Height="700" Width="650"
+        ResizeMode="NoResize"
+        FontSize="20">
+    <StackPanel Name="MainCanvas" Background="Black">
+        <Canvas Name="ScorePanel" Height="50" VerticalAlignment="Center">
+            <Label Name="ScoreLabel" Foreground="White" Canvas.Left="15" Canvas.Top="10">Score: 0</Label>
+            <Label Name="WaveLabel" Foreground="White" Canvas.Right="20"  VerticalAlignment="Top" Canvas.Top="12">Wave: 1</Label>
+        </Canvas>
+
+        <Canvas Name="BoardPanel" Height="570" Width="650">
+            <Label Name="GameOverLabel" Foreground="White" FontSize="30" Canvas.Left="120" Canvas.Top="120" Visibility="Hidden">GAME OVER. SCORE:</Label>
+        </Canvas>
+
+        <Canvas Name="LivesPanel" Height="50" VerticalAlignment="Center">
+            <Label Name="LivesLabel" Foreground="White" Canvas.Left="15" Canvas.Top="10">Lives: 3</Label>
+        </Canvas>
+    </StackPanel>
+</Window>
